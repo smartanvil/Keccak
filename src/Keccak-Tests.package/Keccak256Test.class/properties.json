@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "KeccakTest",
+	"instvars" : [
+		"keccak"
+	],
+	"name" : "Keccak256Test",
 	"type" : "normal"
 }

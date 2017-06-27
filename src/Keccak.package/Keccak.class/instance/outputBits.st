@@ -1,0 +1,3 @@
+accessing
+outputBits
+	^ outputBits

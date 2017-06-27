@@ -1,11 +1,23 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "SantiagoBragagnolo 6/27/2017 14:25",
 	"super" : "HashFunction",
 	"category" : "Keccak",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"blocks",
+		"s",
+		"padding",
+		"outputBits",
+		"reset",
+		"block",
+		"start",
+		"blockCount",
+		"byteCount",
+		"outputBlocks",
+		"extraBytes"
+	],
 	"name" : "Keccak",
 	"type" : "normal"
 }

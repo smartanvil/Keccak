@@ -1,0 +1,3 @@
+accessing
+bits
+	^ self outputBits 

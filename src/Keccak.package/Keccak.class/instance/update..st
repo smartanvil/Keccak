@@ -1,4 +1,6 @@
 public API
 update: aMessage
-
-| index i code | 
+	self privateEnsureDataIsHashable: aMessage.
+	^ aMessage isString
+		ifTrue: [ self updateString: aMessage ]
+		ifFalse: [ self updateByteArray: aMessage ]

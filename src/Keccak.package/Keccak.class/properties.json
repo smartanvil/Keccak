@@ -16,7 +16,8 @@
 		"blockCount",
 		"byteCount",
 		"outputBlocks",
-		"extraBytes"
+		"extraBytes",
+		"lastByteIndex"
 	],
 	"name" : "Keccak",
 	"type" : "normal"

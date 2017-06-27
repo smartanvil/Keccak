@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HashFunction",
+	"category" : "Keccak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Keccak",
+	"type" : "normal"
+}

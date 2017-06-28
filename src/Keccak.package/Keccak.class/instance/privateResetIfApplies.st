@@ -3,5 +3,5 @@ privateResetIfApplies
 	reset
 		ifTrue: [ 
 			reset := false.
-			blocks at: 1 put: block.
-			2 to: blockCount + 1 do: [ :id | blocks at: id put: 0 ] ]
+			blocks at: 0 put: block. 
+			1 to: blockCount do: [ :id | blocks at: id put: 0 ] ]

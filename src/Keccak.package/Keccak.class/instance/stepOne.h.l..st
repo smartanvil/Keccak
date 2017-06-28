@@ -1,4 +1,4 @@
-as yet unclassified
+private auxiliar
 stepOne: factor h: h l: l
 	s at: factor put: ((s at: factor) bitXor: h).
 	s at: factor + 1 put: ((s at: factor + 1) bitXor: l).

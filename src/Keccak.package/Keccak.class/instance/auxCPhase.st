@@ -1,4 +1,4 @@
-as yet unclassified
+private auxiliar
 auxCPhase
 	| h l c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 |
 	c0 := ((((s at: 0) bitXor: (s at: 10)) bitXor: (s at: 20)) bitXor: (s at: 30)) bitXor: (s at: 40).

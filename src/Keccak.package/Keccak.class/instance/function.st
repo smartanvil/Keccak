@@ -1,8 +1,8 @@
-as yet unclassified
+private pharo API
 function
 	| n |
-	n := 1.
-	[ n <= 48 ]
+	n := 0.
+	[ n < 48 ]
 		whileTrue: [ 
 			self auxCPhase.
 			self auxBPhase.

@@ -1,3 +1,3 @@
-tests
+tests - default
 testKeccakDefaultParametersStart
-	self assert: keccak start equals: 1
+	self assert: keccak start equals: 0

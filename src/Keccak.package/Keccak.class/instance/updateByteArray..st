@@ -1,24 +1,22 @@
 public API
 updateByteArray: aMessage
 	| index i id data shift |
-	index := 1.
+	index := 0.
 	[ index <= aMessage size ]
-		whileTrue: [ 
-			self privateResetIfApplies.
+		whileTrue: [ self privateResetIfApplies.
 			i := start.
 			[ index <= aMessage size and: [ i <= byteCount ] ]
 				whileTrue: [ 
-					id := i >> 2.
-					data := aMessage at: index.
+					id := self blockId: i .
+					data := aMessage at: index + 1.
 					shift := self privateShiftAt: i & 3.
-					blocks at: id put: (block at: id) | (data << shift) 
-				] 
-	].
+					blocks at: id put: (block at: id) | (data << shift).
+					index := index + 1 ] ].
 	lastByteIndex := i.
 	i >= byteCount
 		ifTrue: [ start := i - byteCount.
 			block := blocks at: blockCount.
 			self privateFuseSAndBlocks.
-			self f: s.
+			self function.
 			reset := true ]
 		ifFalse: [ start := i ]

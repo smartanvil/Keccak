@@ -1,0 +1,3 @@
+*Keccak
+>>> number
+	^ self >> number 

@@ -2,10 +2,10 @@ private pharo API
 privateManageFourBytesCode: code at: i
 | id id2 id3 id4 shift shift2 shift3 shift4 codeVal  codeVal2 codeVal3 codeVal4 |
 	
-	id := i >> 2.
-	id2 := (i + 1) >> 2.
-	id3 := (i + 2) >> 2.
-	id4 := (i + 3) >> 2.
+	id := self blockId: i.
+	id2 := self blockId: (i + 1) .
+	id3 := self blockId: (i + 2) .
+	id4 := self blockId: (i + 3) .
 	
 	shift := self privateShiftAt: i & 3.
 	shift2 := self privateShiftAt: (i + 1) & 3.

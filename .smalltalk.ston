@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Keccak',
+      #directory : 'pharo',
+      #platforms : [ #pharo]
+    }
+  ]
+}

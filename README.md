@@ -1,5 +1,7 @@
 # Keccak
 
+[![Build Status](https://travis-ci.org/sbragagnolo/Keccak.svg?branch=master)](https://travis-ci.org/sbragagnolo/Keccak)
+
 
 A Keccak implementation for Pharo, supports UTF-8 Encoding.
 

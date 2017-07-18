@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "SantiagoBragagnolo 7/14/2017 15:15",
+	"super" : "Object",
+	"category" : "Keccak",
+	"classinstvars" : [
+		"instances"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"value"
+	],
+	"name" : "KSignedIntegerBoxed32",
+	"type" : "normal"
+}

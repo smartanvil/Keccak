@@ -51,6 +51,9 @@ auxBPhase
 	b27 := (s at: 39) << 8 | ((s at: 38) >>> 24).
 	b8 := (s at: 48) << 14 | ((s at: 49) >>> 18).
 	b9 := (s at: 49) << 14 | ((s at: 48) >>> 18).
+
+	b12 bitXor: b14 bitInvert & b16.
+	b5 bitXor: b7 bitInvert & b9.
 	s at: 0 put: (b0 bitXor: b2 bitInvert & b4).
 	s at: 1 put: (b1 bitXor: b3 bitInvert & b5).
 	s at: 10 put: (b10 bitXor: b12 bitInvert & b14).

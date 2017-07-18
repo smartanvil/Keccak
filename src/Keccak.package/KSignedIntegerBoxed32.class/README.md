@@ -1,0 +1,1 @@
+Signed Integer boxed 32 is an integer which limit is 32 bits, and it's signed.

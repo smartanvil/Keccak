@@ -1,4 +1,3 @@
 *Keccak
 >>> number
-	self assert: self >= 0 .
-	^ self >> number 
+	^ ((-1 << (32 - number)) bitInvert & (self >> number)) 

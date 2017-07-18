@@ -1,4 +1,4 @@
 tests - long update
 testInnerStateAfterLongUpdateBlock
-	self longUpdate .
-	self assert: keccak block equals: 0
+	self longUpdate.
+	self assert: keccak block asInteger  equals: 0
